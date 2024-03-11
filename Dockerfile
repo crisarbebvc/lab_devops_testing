@@ -1,3 +1,6 @@
-FROM eclipse-temurin:11
-ADD ./staging/gs-maven-0.1.0.jar /home/myjar.jar
-CMD ["java","-jar","/home/myjar.jar"]
+ARG jdk_image
+FROM $jdk_image
+LABEL maintainer="nuamx.com"
+ARG jar_file_path
+COPY $jar_file_path app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
