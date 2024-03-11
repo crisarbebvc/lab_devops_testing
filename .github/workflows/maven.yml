@@ -2,7 +2,7 @@ name: Java Maven Build & Publish Artifact
 
 on:
   push:
-    branches: [ "main" ] # development, release, production v5
+    branches: [ "main" ] # development, release, production v6
 
 jobs:
   build_ci: 
