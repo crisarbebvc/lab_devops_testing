@@ -1,0 +1,10 @@
+name: Java Maven Build & Publish Artifact
+
+on:
+  push:
+    branches: [ "build_package" ] # development, release, production v3
+
+jobs:
+  build_ci: 
+#    uses: bvcco/lab_devops_templates/.github/workflows/CD-deployment_build-java.yml@development
+    uses: crisarbebvc/lab_devops_templates/.github/workflows/CD-deployment_build-java.yml@main
