@@ -2,9 +2,10 @@ name: Java Maven Build & Publish Artifact
 
 on:
   push:
-    branches: [ "main" ] # development, release, production v9
+    branches: [ "main" ] # development, release, production v10
 
 jobs:
   build_ci: 
 #    uses: bvcco/lab_devops_templates/.github/workflows/CD-deployment_build-java.yml@development
     uses: crisarbebvc/lab_devops_templates/.github/workflows/CD-deployment_build-java.yml@main
+    secrets: inherit
