@@ -4,11 +4,6 @@ on:
   push:
     branches: [ "main" ] # development, release, production v10
 
-env:
-  # harbor information v1
-  REGISTRY_REPOSITORY: jar-artifact
-  REGISTRY_PROJECT: test-devops
-
 jobs:
   build_ci: 
 #    uses: bvcco/lab_devops_templates/.github/workflows/CD-deployment_build-java.yml@development
