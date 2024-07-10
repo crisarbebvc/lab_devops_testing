@@ -5,7 +5,7 @@ on:
     branches: [ "main" ] # development, release, production v10
 
 env:
-  # harbor information
+  # harbor information v1
   REGISTRY_REPOSITORY: jar-artifact
   REGISTRY_PROJECT: test-devops
 
