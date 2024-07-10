@@ -6,6 +6,5 @@ on:
 
 jobs:
   build_ci: 
-#    uses: bvcco/lab_devops_templates/.github/workflows/CD-deployment_build-java.yml@development
     uses: crisarbebvc/lab_devops_templates/.github/workflows/CD-deployment_build-java.yml@main
     secrets: inherit
